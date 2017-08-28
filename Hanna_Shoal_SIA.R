@@ -759,3 +759,4 @@ ggplot(data = pred, aes(x = d13C, y = d15N))+
 ggsave("Figure 5c.png", plot = last_plot(), device = "png", width = 10, height = 10, units = "in", dpi = 600)
 
 ggsave("Figure 5c.tiff", plot = last_plot(), device = "tiff", width = 10, height = 10, units = "in", dpi = 330)
+ 
