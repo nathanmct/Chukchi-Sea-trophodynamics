@@ -3,6 +3,8 @@
 #Some of the below script has been borrowed from two other sources: 
 #1) Passoti et al. (2015) Benthic trophic interactions in an Antarctic shallow water ecosystem affected by recent glacial retreat. PLoS ONE 10(11):e0141742. doi:10.1371/journal.pone.0141742
 #2) The vignette for the package simmr available at https://cran.r-project.org/web/packages/simmr/vignettes/simmr.html
+#3) From Andrew Parnell's GitHub for simmr (https://github.com/andrewcparnell/simmr/tree/master/R). The functionality is the same, but I have altered some of the ggplot code to change the output visualization.
+
 #Much of it has been modified for our own purposes, but we acknowledge and thank these sources for their open-source code.
 #The script does not produce every figure and table in the order they appear in the manuscript, but rather follows our logic for data analysis. However, each product's label corresponds with the manuscript.
 
