@@ -1,6 +1,4 @@
-# Chukchi-Sea-trophodynamics
-
-Readme for McTigue and Dunton (2017) Trophodynamics of the Hanna Shoal Ecosystem (Chukchi Sea, Alaska): connecting multiple end-members to a rich food web
+# Readme for McTigue and Dunton (2017) Trophodynamics of the Hanna Shoal Ecosystem (Chukchi Sea, Alaska): connecting multiple end-members to a rich food web
 
 In RStudio, open Hanna_Shoal_SIA.r to run analysis. Be sure all files from this repository are in your working directory.
 
@@ -14,7 +12,7 @@ Some of the analysis scripts have been borrowed from other sources:
 Much of it has been modified for our own purposes, but we acknowledge and thank these sources for their open-source code.
 The script does not produce every figure and table in the order they appear in the manuscript, but rather follows our logic for data analysis. However, each product's label corresponds with the manuscript.
 
-# File descriptions:
+## File descriptions:
 
 HS_isotope_data.csv is a file containing all stable isotope data for Hanna Shoal study.
 
