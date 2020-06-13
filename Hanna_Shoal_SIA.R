@@ -576,7 +576,6 @@ simmr_groups_pred = simmr_load(mixtures = mix.pred,
 
 
 #run MCMC for each group
-source("simmrmcmc.r")
 susp_out = simmr_mcmc(simmr_groups_susp)
 depo_out = simmr_mcmc(simmr_groups_depo)
 pred_out = simmr_mcmc(simmr_groups_pred)
@@ -586,20 +585,17 @@ pred_out = simmr_mcmc(simmr_groups_pred)
 ######################
 
 #obtain 95% credible intervals...
-susp.summ <- summary.simmr_output(susp_out, type=c("quantiles", "statistics"), group=c(1:max(susp$Code)))
+susp.summ <- summary(susp_out, type=c("quantiles", "statistics"), group=c(1:max(susp$Code)))
 write.xlsx(susp.summ, "Supp Table 2_susp_summary.xlsx")
 
-depo.summ <- summary.simmr_output(depo_out, type=c("quantiles", "statistics"), group=c(1:max(depo$Code)))
+depo.summ <- summary(depo_out, type=c("quantiles", "statistics"), group=c(1:max(depo$Code)))
 write.xlsx(depo.summ, "Supp Table 2_depo_summary.xlsx")
 
-pred.summ <- summary.simmr_output(pred_out, type=c("quantiles", "statistics"), group=c(1:max(pred$Code)))
+pred.summ <- summary(pred_out, type=c("quantiles", "statistics"), group=c(1:max(pred$Code)))
 write.xlsx(pred.summ, "Supp Table 2_pred_summary.xlsx")
 
 #Visually assess convergence of chains and make note of Gelman diagnostics
 
-plot(susp_out, type = 'convergence')
-plot(depo_out, type = 'convergence')
-plot(pred_out, type = 'convergence')
 summary(susp_out, type = "diagnostics")
 summary(depo_out, type = "diagnostics")
 summary(pred_out, type = "diagnostics")
